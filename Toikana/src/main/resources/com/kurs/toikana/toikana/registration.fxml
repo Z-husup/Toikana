@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#initialize2" prefHeight="746.0" prefWidth="893.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kurs.toikana.toikana.LoginController">
+   <children>
+      <Pane layoutX="193.0" layoutY="126.0" prefHeight="456.0" prefWidth="517.0">
+         <children>
+            <Label fx:id="restaurantText" layoutX="58.0" layoutY="331.0" prefHeight="17.0" prefWidth="211.0" text="Belonged Restaurant" visible="false">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Label>
+            <Label layoutX="137.0" layoutY="234.0" prefHeight="17.0" prefWidth="211.0" text="Email">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Label>
+            <Label layoutX="119.0" layoutY="84.0" prefHeight="32.0" prefWidth="117.0" text="Registration" textAlignment="CENTER">
+               <font>
+                  <Font name="Webdings" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Label>
+            <Label layoutX="116.0" layoutY="142.0" prefHeight="17.0" prefWidth="230.0" text="Username">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Label>
+            <Label layoutX="119.0" layoutY="185.0" prefHeight="17.0" prefWidth="230.0" text="Password">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Label>
+            <Label layoutX="139.0" layoutY="279.0" prefHeight="17.0" prefWidth="211.0" text="Type">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Label>
+            <TextField fx:id="usernameField" layoutX="182.0" layoutY="138.0" prefHeight="25.0" prefWidth="169.0">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="emailField" layoutX="182.0" layoutY="230.0" prefHeight="25.0" prefWidth="169.0">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </TextField>
+            <PasswordField fx:id="passwordField" layoutX="182.0" layoutY="181.0" prefHeight="25.0" prefWidth="169.0">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </PasswordField>
+            <ChoiceBox fx:id="accountTypeField" layoutX="182.0" layoutY="275.0" onContextMenuRequested="#initialize1" onMouseClicked="#initialize1" onMousePressed="#initialize1" onMouseReleased="#initialize1" prefHeight="25.0" prefWidth="169.0">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </ChoiceBox>
+            <Button fx:id="registrationButton" layoutX="304.0" layoutY="366.0" mnemonicParsing="false" onAction="#switchToLogin" text="Apply">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Button>
+            <ChoiceBox fx:id="restaurantField" layoutX="184.0" layoutY="327.0" prefHeight="25.0" prefWidth="169.0" visible="false" />
+            <Label fx:id="alreadyExists" layoutX="245.0" layoutY="92.0" prefHeight="17.0" prefWidth="117.0" text="Email already exists" textFill="RED" visible="false" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
